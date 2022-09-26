@@ -27,3 +27,4 @@ Horizontal rule:
 # code block
 print 'Hello World'
 ```
+This is some new texts I edited in VSCode
