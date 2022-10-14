@@ -66,6 +66,7 @@ public class SearchEngine {
 
 > Here are some screenshots of how my search engine functioned:
 
+
 * In this first image, the method of ***Server.start(port, searchEngineHandler)*** has been called since it's the first method used to even start the server. In this case, the port I used was 4000 so the url was http://localhost:4000. If we changed this value we inputed to some other numbers between 1024 to 49151, we would have a different url with the nunmber 4000 be replaced by the input number we use. If we do not input any number when starting the program, the program would print a message and ask for a port number.
 
 * Then, the method of ***handleRequest()*** has been called to process the URL we inputed, in which in this case I didn't add anything else to the root URL so the search engine returns a default page with a welcome message.
