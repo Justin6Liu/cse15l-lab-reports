@@ -3,7 +3,10 @@
 ## Alternative ways to use command line commands
 
 >less
+
 * less -e
+
+
 ```
 # This is the input:
 (base) justinliu@JustindeMacBook-Air technical % less -e plos/pmed.0020212.txt 
@@ -412,12 +415,13 @@ Research into the etiology of schizophrenia has never been as interesting or as
         genetic variation were proven to be causal to schizophrenia, this poor reflection might
         improve [28].
 ```
----
+
 The output is just like any `less` command will make, but this time, when the user is viewing the content, the percentage of contents viewed will be displayed at the prompt. This may be convenient for many users since we don't usually know how much we have read through a file in `less`. (Using -M instead of -m will display even more information as lines number and location of the file in the prompt)
 
 ---
 
 * less -N
+
 
 ```
 # input:
@@ -624,12 +628,17 @@ The output is just like any `less` command will make, but this time, when the us
 198      
 
 ```
+
 `less -N` returns slightly different display comparing with other `less` commands. Uisng the `-N` option, the line number got to be displayed on the view of `less` as well, which makes it much easier to know which line the user is reading.
 
 ---
 
 > find
+
+
 * find -name
+
+
 ```
 # input:
 (base) justinliu@JustindeMacBook-Air skill-demo1 % find technical -name "chapter-11.txt"
@@ -637,11 +646,14 @@ The output is just like any `less` command will make, but this time, when the us
 # output:
 technical/911report/chapter-11.txt
 ```
+
 With `-name` attached to find, this method will find a file or directory that has the exact name as we inputed. If we only input a partial name to a file such as "chapter", we would not find any match.
 
 ---
 
 * find -type d
+
+
 ```
 # input:
 (base) justinliu@JustindeMacBook-Air skill-demo1 % find technical -type d
@@ -659,10 +671,14 @@ technical/plos
 technical/biomed
 technical/911report
 ```
+
 Attaching `-type d` to the end of find will return a list of elements that matches the type we inputed. In this case, the type `d` referes to directories, so `find` returned all the directories in `technical` as we wished.
 
 ---
+
 * find -type f
+
+
 ```
 # input:
 (base) justinliu@JustindeMacBook-Air skill-demo1 % find technical/government/Media -type f
@@ -815,11 +831,17 @@ technical/government/Media/Legal_Aid_campaign.txt
 technical/government/Media/Aid_Gets_7_Million.txt
 
 ```
+
 Using `find -type f`, the method returns the list of files in the given directory. This is very convenient since we get to sift out the directories inside the aimed directory when trying to record for example the number of files inside an aimed directory, like what we did in lab4.
 
 ---
+
 > grep
+
+
 * grep -i 
+
+
 ```
 # input:
 (base) justinliu@JustindeMacBook-Air skill-demo1 % grep -i "this" technical/plos/pmed.0020212.txt
@@ -838,6 +860,7 @@ Using `find -type f`, the method returns the list of files in the given director
         However, it is not premature to inform patients that this work is advancing and that it
         genetic variation were proven to be causal to schizophrenia, this poor reflection might
 ```
+
 Using `-i` option with grep will grep the desired string from the file without requring the matching of uppercase and lowercase letters. If we did not use the `-i` option, the lines that contains "*This*" will not be displayed.
 
 ---
@@ -881,9 +904,11 @@ Using `-i` option with grep will grep the desired string from the file without r
     
   
 ```
+
 As we've shown above, `grep -v` will grep lines from a file with an inverted sense of matching, which means it will grep all the lines that does not contain the given keyword and return them to the user. This may be pretty useful to us sometime if we'd like to sift out some of the lines that we may not need in a file.
 
 ---
+
 * grep -c
 
 ```
@@ -893,4 +918,5 @@ As we've shown above, `grep -v` will grep lines from a file with an inverted sen
 # output:
 167
 ```
+
 Appending `-c` to `grep` will make it only return the number of matching lines instead of displaying all the matching lines to the user. This may be more convenient if we only want to know the number of matching lines without wanting to know what are the contents of the matching lines.
