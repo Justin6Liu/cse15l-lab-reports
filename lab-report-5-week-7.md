@@ -37,7 +37,6 @@
 * Editing offline in VSCode first then use scp to sent it to the remote server cost me about a minute.
 * Editing directly in the remote server cost me about a minute as well.
 
-
 > Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why?
 
 * Answer: In practice, if ther are only small changes I have to make to the documents in the remote server, I may prefer do it through vim on the remote server since it's more convenienet. If I have to write an entire program or make some huge modifications to the program(s), I will prefer do it offline wiht VSCode since it's helps me make fewer mistakes while programming.
