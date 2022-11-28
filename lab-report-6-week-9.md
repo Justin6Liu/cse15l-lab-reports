@@ -40,15 +40,15 @@ echo "file ListExanples.java not exists"
 ```
 
 * result for https://github.com/ucsd-cse15l-f22/list-methods-lab3
-![image1](LabReport6Pic/LR6-1.png)
+![image1](LabReport6Pic/LR6-4.png)
 As we can see, the grader did not print out OK since this program contains an infinite loop.
 
 * result for https://github.com/ucsd-cse15l-f22/list-methods-corrected
-![image1](LabReport6Pic/LR6-2.png)
+![image1](LabReport6Pic/LR6-5.png)
 This time the grader printed Ok, which means the program passed the test.
 
 * result for https://github.com/ucsd-cse15l-f22/list-methods-nested
-![image1](LabReport6Pic/LR6-3.png)
+![image1](LabReport6Pic/LR6-6.png)
 This is the program that's hidden in a folder called PA1, and my grader successfully run the test as well and printed out OK.
 
 > Tracing the grader
